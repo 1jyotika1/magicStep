@@ -1,0 +1,22 @@
+<!-- .catch() -->
+<!-- Promise rejected: -->
+<!-- a) -->
+<html>
+    <head>
+        <title>problem rejected</title>
+    </head>
+    <body>
+        <script>
+      var promise = new Promise(function(resolve,reject){
+        resolve("Promise rejected")
+      })
+      promise
+      .then(function(successMessage){
+        console.log("successMessage");
+      })
+      .catch(function(errorMessage){
+        console.log("errorMessage");
+      });
+</script>
+    </body>
+</html>
